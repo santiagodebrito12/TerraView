@@ -1,0 +1,13 @@
+.contenedor-centro{
+    display: flex;
+  }
+  .contenedor-sidebar{
+   
+    background-color: var(--blue-principal);
+    height: 100vh;
+    
+  }
+
+  .contenedor-principal{
+    flex: 10;
+  }

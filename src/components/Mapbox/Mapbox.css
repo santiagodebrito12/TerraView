@@ -1,0 +1,14 @@
+.contenedor-botones{
+    flex-direction: column;
+}
+.contenedor-botones button{
+    width: 48px;
+}
+
+.contenedor-search-input{
+    left: 34vw;
+    min-width: 450px;
+}
+.contenedor-search-input form input{
+    flex: 3;
+}

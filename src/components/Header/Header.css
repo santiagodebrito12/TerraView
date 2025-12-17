@@ -1,0 +1,36 @@
+.contenedor-header{
+    height: 60px;
+    background-color: var(--blue-principal);
+    padding: 2px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-header .logo{
+    width: 54px;
+}
+.contenedor-header div{
+    display: flex; 
+    align-items: center;
+    color: white;
+    
+}
+.contenedor-user-icon{
+    padding: 10px 24px;
+    box-shadow: 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 4px 0px;
+}
+.user-icon{
+    color: white;
+    font-size: 24px;
+    margin: 0px 8px 0px 16px;
+}
+
+.contenedor-modal{
+    flex-direction: column;
+    z-index: 10000;
+    top: 45px;
+}

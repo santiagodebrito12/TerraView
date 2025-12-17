@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --blue-principal:#234451;
+  --orange:#ff9443;
+  --background-light:#FAF3EB;
+  --background-dark:#303030;
+  --baseOrange:#BD5505;
+  --orangeLogo:#FF6F00;
+  --pure-white: #EBECF4;
+  --white-hover:#CACCE2;
+  --buttonBrownHover:#914408;
+  --dark-navy: #0F1C2E;
+  --grey-navy: #626c7f;
+  --light-grey: #f4f6fa;
+  --navy: #3b4d66;
+  --light-bluish: #abc1e1;
+  --body-font: "Michroma", sans-serif;
+  --body-font: "Manrope", sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--blue-principal);
 }
