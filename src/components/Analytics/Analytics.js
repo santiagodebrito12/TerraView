@@ -33,9 +33,12 @@ const OrdersIcon = () => (
 /**
  * Tarjeta de estadística individual
  */
-const StatCard = ({ title, value, icon }) => (
+const StatCard = ({ title, value, icon }) => 
+  (
   <div className="bg-white rounded-2xl shadow-md p-6 border border-gray-200 hover:shadow-lg transition-all flex items-center space-x-4">
-    <div className="flex-shrink-0">
+    <div className="flex-shrink-0" onClick={()=>{
+      console.log("hola")
+    }}>
       {icon}
     </div>
     <div>
@@ -98,7 +101,12 @@ const Analytics = () => {
   if(analyticsState == "dashboard"){
     return (
       <div className="w-full m-5 mx-auto p-6">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gray">Analytics</h2>
+        <div className="flex">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gray">Analytics</h2> 
+        <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gray ml-3" onClick={()=>{
+         setanalyticsState('fallos')
+        }}>Inferences</h2>
+        </div>    
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <StatCard title="Reportes Realizados" value={stats.reportsCompleted} icon={<ReportIcon />} />
           <StatCard title="Fallos Detectados" value={stats.failuresDetected} icon={<WarningIcon />} onClick={()=>{
@@ -111,7 +119,7 @@ const Analytics = () => {
     );
   }else{
     return(
-      <Inferences/>
+      <Inferences analyticsState={analyticsState} setanalyticsState={setanalyticsState} />
     );
   
   }
