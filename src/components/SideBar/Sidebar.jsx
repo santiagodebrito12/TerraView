@@ -2,7 +2,7 @@ import React from 'react'
 import "./Sidebar.css"
 import { useDispatch } from 'react-redux'
 import { setAppState } from '../../features/appStateSlice';
-
+import absvg from '../../assets/comparison-svgrepo-com.svg'
 const Sidebar = () => {
    
     const dispatch= useDispatch();
@@ -83,7 +83,17 @@ const Sidebar = () => {
                                 <span class="text-xs font-medium">Gallery</span>
                             </a>
                         </li>
-
+                        <li onClick={(e)=>{
+                        handleAppState('comparative')
+                     }}  >
+                            <a href="#" class="flex flex-col items-center justify-center w-20 h-20 rounded-lg transition-all duration-200 text-icon-gray hover:bg-icon-hover-bg hover:text-white" title="gallery">
+                                
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0000" stroke-width="white" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-1">
+                            <path d="M12 3L12 21M14.7107 19.3887C17.1796 18.8321 19.1072 16.979 19.6863 14.6058C20.1046 12.8918 20.1046 11.1081 19.6863 9.39419C19.1072 7.02094 17.1796 5.16789 14.7107 4.61121M12 4.30969C11.0904 4.30969 10.1808 4.41019 9.28927 4.61121C6.82045 5.16789 4.89278 7.02094 4.31367 9.39419C3.89544 11.1081 3.89544 12.8918 4.31367 14.6058C4.89278 16.979 6.82045 18.8321 9.28928 19.3887C10.1808 19.5898 11.0904 19.6903 12 19.6903" stroke="white"  stroke-linecap="round"/>
+                            </svg>
+                                <span class="text-xs font-medium">A/B</span>
+                            </a>
+                        </li>
                        
                        
                         

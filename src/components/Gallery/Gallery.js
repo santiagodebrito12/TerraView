@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState,useMemo } from 'react';
-import foto from '../../assets/P-44/Derecha inferior/ejemplo1.jpg'
-import foto2 from '../../assets/P-44/Izquierda Superior/mosquete3.jpg'
-import foto3 from '../../assets/P-44/Izquierda inferior/mosquete1.jpg'
-import foto4 from '../../assets/P-44/Izquierda inferior/mosquete2.jpg'
-import foto5 from '../../assets/P-44/Izquierda inferior/tuerca1.jpg'
-import foto6 from '../../assets/P-44/Izquierda Superior/enganche4.jpg'
-import foto7 from '../../assets/P-44/Enganche superior /enganche.jpg'
+import foto from '../../assets/Pozo-124/DJI_20251206125129_0098_V.jpg'
+import foto2 from '../../assets/Pozo-124/DJI_20251206125136_0099_V.jpg'
+import foto3 from '../../assets/Pozo-124/DJI_20251206125208_0113_V.jpg'
+import foto4 from '../../assets/Pozo-124/DJI_20251206125213_0114_V.jpg'
+import foto5 from '../../assets/Pozo-124/DJI_20251206125220_0115_V.jpg'
+import foto6 from '../../assets/Pozo-124/DJI_20251206125224_0116_V.jpg'
+import foto7 from '../../assets/Pozo-124/DJI_20251206125226_0117_V.jpg'
 // --- Datos de Prueba (Mock Data) ---
 // Simula los datos que recibirías como props desde tu API.
 const mockPhotos = [

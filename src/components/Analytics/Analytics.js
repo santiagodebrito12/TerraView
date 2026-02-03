@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import Inferences from '../Inferences/Inferences'
 // --- INICIO: Nuevo Componente Analytics ---
 
 /**
@@ -87,23 +87,35 @@ const MonthlyChart = () => {
  */
 const Analytics = () => {
   // Datos de prueba para las analíticas
+  const [analyticsState,setanalyticsState]= useState('dashboard')
+  
   const stats = {
     reportsCompleted: 128,
     failuresDetected: 34,
     workOrders: 22,
   };
-
-  return (
-    <div className="w-full m-5 mx-auto p-6">
-      <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gray">Analytics</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <StatCard title="Reportes Realizados" value={stats.reportsCompleted} icon={<ReportIcon />} />
-        <StatCard title="Fallos Detectados" value={stats.failuresDetected} icon={<WarningIcon />} />
-        <StatCard title="Órdenes de Trabajo (Mes)" value={stats.workOrders} icon={<OrdersIcon />} />
-        <MonthlyChart />
+  
+  if(analyticsState == "dashboard"){
+    return (
+      <div className="w-full m-5 mx-auto p-6">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6 text-gray">Analytics</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <StatCard title="Reportes Realizados" value={stats.reportsCompleted} icon={<ReportIcon />} />
+          <StatCard title="Fallos Detectados" value={stats.failuresDetected} icon={<WarningIcon />} onClick={()=>{
+            setanalyticsState('fallos')
+          }}/>
+          <StatCard title="Órdenes de Trabajo (Mes)" value={stats.workOrders} icon={<OrdersIcon />} />
+          <MonthlyChart />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }else{
+    return(
+      <Inferences/>
+    );
+  
+  }
+  
 };
 // --- FIN: Nuevo Componente Analytics ---
 

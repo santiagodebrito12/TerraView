@@ -7,6 +7,7 @@ import Inspections from '../Inspections/Inspections';
 import Analytics from '../Analytics/Analytics';
 import Gallery from '../Gallery/Gallery';
 import Settings from '../Settings/Settings';
+import Comparative from '../Comparative/Comparative';
 import MapBox from '../Mapbox/Mapbox';
 
 const Dashboard = () => {
@@ -24,7 +25,7 @@ const Dashboard = () => {
     {feature === "analytics" && <Analytics/>}
     {feature === "gallery" && <Gallery/>}
     {feature === "settings" && <Settings/>}
-    
+    {feature === "comparative" && <Comparative/>}
     </div>
  
   
