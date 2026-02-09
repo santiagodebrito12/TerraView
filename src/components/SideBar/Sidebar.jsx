@@ -84,6 +84,19 @@ const Sidebar = () => {
                             </a>
                         </li>
                         <li onClick={(e)=>{
+                        handleAppState('timeline')
+                     }}  >
+                            <a href="#" class="flex flex-col items-center justify-center w-20 h-20 rounded-lg transition-all duration-200 text-icon-gray hover:bg-icon-hover-bg hover:text-white" title="timeline">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="text-xs font-medium">Timeline</span>
+                            </a>
+                        </li>
+
+                        <li onClick={(e)=>{
                         handleAppState('comparative')
                      }}  >
                             <a href="#" class="flex flex-col items-center justify-center w-20 h-20 rounded-lg transition-all duration-200 text-icon-gray hover:bg-icon-hover-bg hover:text-white" title="gallery">
