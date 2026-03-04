@@ -107,9 +107,16 @@ const Sidebar = () => {
                                 <span class="text-xs font-medium">A/B</span>
                             </a>
                         </li>
-                       
-                       
-                        
+                        <li onClick={(e)=>{
+                        handleAppState('relevamientos')
+                     }}  >
+                            <a href="#" class="flex flex-col items-center justify-center w-20 h-20 rounded-lg transition-all duration-200 text-icon-gray hover:bg-icon-hover-bg hover:text-white" title="relevamientos">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-1">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-xs font-medium">Relevam.</span>
+                            </a>
+                        </li>
 
                     </ul>
                 </nav>

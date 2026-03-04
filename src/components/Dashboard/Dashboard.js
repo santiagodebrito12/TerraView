@@ -10,6 +10,7 @@ import Settings from '../Settings/Settings';
 import Comparative from '../Comparative/Comparative';
 import Timeline from '../Timeline/Timeline';
 import MapBox from '../Mapbox/Mapbox';
+import Relevamientos from '../Relevamientos/Relevamientos';
 
 const Dashboard = () => {
     const feature = useSelector((state) => state.appState.feature);  
@@ -28,6 +29,7 @@ const Dashboard = () => {
     {feature === "settings" && <Settings/>}
     {feature === "comparative" && <Comparative/>}
     {feature === "timeline" && <Timeline/>}
+    {feature === "relevamientos" && <Relevamientos/>}
     </div>
  
   
